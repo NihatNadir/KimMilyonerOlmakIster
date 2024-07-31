@@ -30,7 +30,9 @@ namespace KimMilyonerOlmakIster
                         Console.WriteLine($"Tebrikler Büyük Ödül Sizin!!! Doğru Sayınız : {count}");
                         break;
                     }
-                }                                       
+                } 
+                if (i == 1 && count == 0) // Doğru cevap sayısı 0 olduğu için 3. soruyu görmeye gerek yok.                               
+                    break;
             }
             if (count < 2) // 3 soru döngüsü tamamlandığında ve yanlış cevaplara göre başarısız olduğu ekrana yazdırıldı.
                 Console.WriteLine($"Malesef Başarısız Oldunuz!!! Doğru Sayınız : {count} ");
